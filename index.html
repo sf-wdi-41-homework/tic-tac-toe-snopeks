@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- link to custom stylesheet (always require after Bootstrap) -->
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
-    <!-- jQuery from CDN -->
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
 
+    <!-- jQuery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
     <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script type="text/javascript" src="js/app.js"></script>
 
     <title>Tic Tac Toe</title>
   </head>
@@ -30,20 +32,31 @@
 
         <!-- a column represents our game board -->
         <!-- the `offset` class helps us center the board -->
-        <div class="col-md-6 col-md-offset-3" id="board">
+        <div class="col-md-6 col-md-offset-3 text-center" id="board">
 
           <!-- you can put rows inside of columns! -->
+          <div class="row">
+            <div id="box1" class="col-md-4 box">a</div>
+            <div id="box2" class="col-md-4 box">a</div>
+            <div id="box3" class="col-md-4 box">a</div>
+          </div>
           <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
           <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
+            <div id="box4" class="col-md-4 box">a</div>
+            <div id="box5" class="col-md-4 box">a</div>
+            <div id="box6" class="col-md-4 box">a</div>
           </div>
-
+          <div class="row">
+            <div id="box7" class="col-md-4 box">a</div>
+            <div id="box8" class="col-md-4 box">a</div>
+            <div id="box9" class="col-md-4 box">a</div>
+          </div>
+          <button type="button" class="btn btn-default">Reset Board</button>
 
 
         </div>
       </div>
     </div>
+
   </body>
 </html>
