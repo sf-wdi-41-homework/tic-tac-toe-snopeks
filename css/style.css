@@ -1,8 +1,21 @@
 #board {
   margin-top: 10px;
+  /*border: 1px solid black;*/
 }
 
 .box {
   border: 1px solid black;
-  height: 150px;
+  min-height: 216px;
+  background-color: lightblue;
+}
+
+.played.X{
+  color: purple;
+  font-size: 150px;
+  text-align:center;
+}
+
+.played.O{
+  color: lightyellow;
+  font-size: 150px;
 }
