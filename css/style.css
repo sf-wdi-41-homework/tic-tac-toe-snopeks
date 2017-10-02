@@ -6,7 +6,7 @@
 .box {
   border: 1px solid black;
   min-height: 216px;
-  background-color: lightblue;
+  background-color: lavender;
 }
 
 .played.X{
@@ -16,6 +16,6 @@
 }
 
 .played.O{
-  color: lightyellow;
+  color: orange;
   font-size: 150px;
 }
