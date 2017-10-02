@@ -8,10 +8,8 @@ $(document).ready(function() {
     var notPlayed = true;
     //add an X to make a move, add classes "played" and "X".
     if($(event.target).hasClass("played") === false){
-      console.log("in if statement")
       console.log(event.target.id)
       $(event.target).text("X").addClass("played X")
-      // $(event.target).
       played ++;
       notPlayed = checkWins();
     } else {
@@ -24,7 +22,6 @@ $(document).ready(function() {
     while(notPlayed && played < len){
       //add randomizing math
       var random = Math.floor(Math.random() * len);
-      //console.log($(".box").hasClass("played"))
       //if the square is not "played"
       if($(".box")[random].classList.contains("played") === false){
         //have the computer mark a O to make their move
@@ -40,8 +37,8 @@ $(document).ready(function() {
 
     // how to find the id of the box I clicked:
     // console.log(event.target.id)
-    console.log(played)
-    console.log($('.box').hasClass('played'))
+    // console.log(played)
+    // console.log($('.box').hasClass('played'))
   });
 
   //how to win: three X's or three O's in a row.
@@ -52,7 +49,6 @@ $(document).ready(function() {
   //diagonal: box1 + box5 + box9, box3 + box5 + box7
 
   function checkWins(){
-    console.log("checkwins start")
     if($('#box1').hasClass("X") && $('#box2').hasClass("X") && $('#box3').hasClass("X")){
       alert("X wins!")
       // $('.box').off('click')
